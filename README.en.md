@@ -1,36 +1,112 @@
 # company-oa-system
 
-#### Description
-该系统旨在通过微信小程序为企业员工提供便捷的办公服务，包括但不限于考勤打卡、任务管理、薪资查询等功能。同时，它还提供了后台管理系统，方便企业管理者进行员工信息、请假记录等的管理。
+## Introduction
+### Enterprise Office Automation (OA) System Based on WeChat Mini Program
 
-#### Software Architecture
-Software architecture description
+This system aims to provide convenient office services for enterprise employees through the WeChat Mini Program, including but not limited to attendance check-in, task management, salary inquiry, and more. It also provides a backend management system for enterprise managers to manage employee information, leave records, etc.
 
-#### Installation
+#### Functional Structure Diagram
+Management End
+[](./images/m1.png)
+Client End
+[](./images/c1.png)
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+## Software Architecture
+The system is divided into three ends: Client End (WeChat Mini Program), Management End (Web Application), and Service End.
 
-#### Instructions
+- **Client End**: Implemented using native WeChat Mini Program, provided for use by enterprise employees.
+- **Management End**: Implemented using the Layui framework, provided for enterprise managers to perform various management operations.
+- **Service End**: Built using the Java SpringBoot framework, responsible for handling business logic and data interaction.
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+##### Technology Stack Used:
+- **Client End**: WeChat Mini Program
+- **Management End**: HTML, CSS, JavaScript, Layui, Ajax, jQuery
+- **Service End**: Java JDK8, SpringBoot, Mybatis
+- **Database**: MySQL
+- **Development Tools**: Idea, HBuilderX, WeChat Mini Program Developer Tool, XAMPP, Navicat
 
-#### Contribution
+## Installation Guide
+1. Start the MySQL service, create a database named `company_oasystem`, and import the database file `company_oasystem.sql`.
+2. Open the `CompanyOAServer` project in Idea, modify the database connection information in `application.yml`, then start the project.
+3. Open the management end project `CompanyOAManager` in HBuilderX, adjust the server configuration within `AppConfig.js`, and set up a web server (such as Nginx or Apache; XAMPP integrated environment is recommended).
+4. Use the WeChat Mini Program Developer Tool to open the `CompanyOA` project, edit the server address and port number in the `request.js` file, then run the project.
+5. Test the login of both the client and management ends to ensure the system operates normally.
 
-1.  Fork the repository
-2.  Create Feat_xxx branch
-3.  Commit your code
-4.  Create Pull Request
+## Effect Diagrams
+- **Client End**
+  ![](./images/c2.png)
+  ![](./images/c3.png)
+  ![](./images/c4.png)
+  ![](./images/c5.png)
+  ![](./images/c6.png)
+  ![](./images/c7.png)
+  ![](./images/c8.png)
+  ![](./images/c9.png)
+  ![](./images/c10.png)
+  ![](./images/c11.png)
+  ![](./images/c12.png)
+  ![](./images/c13.png)
+  ![](./images/c14.png)
+  ![](./images/c15.png)
+  ![](./images/c16.png)
+- **Management End**
+  ![](./images/m2.png)
+  ![](./images/m3.png)
+  ![](./images/m4.png)
+  ![](./images/m5.png)
+  ![](./images/m6.png)
+  ![](./images/m7.png)
 
+## Resources
+#### Feature Overview
+![](./images/d2.png)
+#### Client UI Concept
+![](./images/d3.png)
+#### Database Entity Design
+![](./images/d1.png)
 
-#### Gitee Feature
+#### Final Words
+All codes and databases are proprietary and not open source. If you find them useful, please give us a star and contact me, thank you! !!! For learning and exchange only, do not use commercially or for illegal purposes! Should you encounter any issues during deployment, feel free to contact me. Custom development and technical support are also available upon request.
+Email: 1373577355@qq.com
+WeChat: Awake778
 
-1.  You can use Readme\_XXX.md to support different languages, such as Readme\_en.md, Readme\_zh.md
-2.  Gitee blog [blog.gitee.com](https://blog.gitee.com)
-3.  Explore open source project [https://gitee.com/explore](https://gitee.com/explore)
-4.  The most valuable open source project [GVP](https://gitee.com/gvp)
-5.  The manual of Gitee [https://gitee.com/help](https://gitee.com/help)
-6.  The most popular members  [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+#### Technical Support Charges Apply
+Everyone's time is precious, no freeloaders please!!!
+![](./images/wx.jpg)
+
+# Technical Support Options
+- Option 1: I will develop according to requirements, deploy it, provide a brief explanation, and be available for any technical questions afterwards.
+- Option 2: Work alongside me, I'll guide you through the process, explaining as we go. Any technical questions post-development can be asked, minor adjustments are free of charge.
+
+### Our Technology Stack:
+#### Frontend Technologies
+- **Web Development**: VUE, Element, Bootstrap, LayUI
+- **WeChat Mini Program**: Native development, Taro
+- **Mobile App Development**:
+    - Android（Java）
+    - iOS（Swift）
+- **Cross-platform Development**: uniapp
+
+#### Backend Technologies
+- **Java Ecosystem**:
+    - Frameworks: Spring, SpringBoot, SpringSecurity
+    - Data Persistence: MyBatis, JPA
+- **Other Backend Languages**: PHP, Python, Node.js
+
+#### Database Management
+- **Relational Databases**: MySQL, SQLServer, SQLite, Oracle
+- **Non-relational Databases**: MongoDB
+- **Caching & Searching**: Redis, ElasticSearch
+
+#### Server & Deployment
+- **Operating System Deployment, Maintenance & Debugging**: Linux, Windows
+- **Containerization & Orchestration**: Docker deployment, Kubernetes (k8s) deployment
+- **Web Server Configuration**: Nginx, Apache, Tomcat, IIS
+- **CI/CD & Version Control**: Jenkins deployment, Git deployment, SVN deployment
+
+#### Other Technical Skills
+- **Data Analysis**: Java-based analysis tools, Python-based analysis tools
+- **Web Scraping Development**: Based on Java
+- **Automated Testing**: Interface testing (based on Java), Automated testing (based on Java)
+- **Automated Operations & Monitoring**:
+    - Automated deployment (based on Java)
